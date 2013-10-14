@@ -4,30 +4,18 @@ namespace pallo\setup;
 
 use \Composer\Installer\LibraryInstaller;
 use \Composer\Package\PackageInterface;
-use \Composer\Plugin\PluginInterface;
 use \Composer\Repository\InstalledRepositoryInterface;
 
 /**
  * Setup hooks for the Composer dependency manager
  */
-class ComposerInstaller extends LibraryInstaller implements PluginInterface {
+class ComposerInstaller extends LibraryInstaller {
 
     /**
      * Type of packages to handle
      * @var string
      */
     const TYPE = 'pallo-setup';
-
-    /**
-     * Activates the installer
-     * @param Composer $composer
-     * @param IOInterface $io
-     */
-    public function activate(Composer $composer, IOInterface $io) {
-        $installer = new self($io, $composer, self::TYPE);
-
-        $composer->getInstallationManager()->addInstaller($installer);
-    }
 
     /**
      * Decides if the installer supports the given type

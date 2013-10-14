@@ -2,7 +2,7 @@
     "name": "pallo/setup",
     "description": "Setup hooks for the Composer dependency manager.",
     "version": "0.1.1",
-    "type": "composer-plugin",
+    "type": "composer-installer",
     "authors": [
         {
             "name": "Joris Vandeweerd",
