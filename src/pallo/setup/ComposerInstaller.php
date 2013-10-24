@@ -54,7 +54,7 @@ class ComposerInstaller extends LibraryInstaller {
     public function update(InstalledRepositoryInterface $repo, PackageInterface $initial, PackageInterface $target) {
         parent::update($repo, $initial, $target);
 
-        $script = 'vendor/' . $package->getPrettyName() . '/src/update.php';
+        $script = 'vendor/' . $target->getPrettyName() . '/src/update.php';
         if (file_exists($script)) {
             include($script);
         }
