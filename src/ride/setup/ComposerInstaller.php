@@ -1,6 +1,6 @@
 <?php
 
-namespace pallo\setup;
+namespace ride\setup;
 
 use \Composer\Installer\LibraryInstaller;
 use \Composer\Package\PackageInterface;
@@ -15,7 +15,7 @@ class ComposerInstaller extends LibraryInstaller {
      * Type of packages to handle
      * @var string
      */
-    const TYPE = 'pallo-setup';
+    const TYPE = 'ride-setup';
 
     /**
      * Decides if the installer supports the given type
