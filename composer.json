@@ -10,13 +10,13 @@
         }
     ],
     "require": {
-        "composer-plugin-api": "1.0.0"
+        "composer-plugin-api": "^1.0"
     },
     "autoload": {
-        "psr-0": { 
-            "ride\\setup\\": "src/" 
+        "psr-0": {
+            "ride\\setup\\": "src/"
         }
-    },   
+    },
     "extra": {
         "class": "ride\\setup\\ComposerInstaller"
     }
