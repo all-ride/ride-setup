@@ -1,7 +1,7 @@
 {
     "name": "ride/setup",
     "description": "Setup hooks for the Composer dependency manager.",
-    "version": "0.1.4",
+    "license": "MIT",
     "type": "composer-installer",
     "authors": [
         {
